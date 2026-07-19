@@ -5,8 +5,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      <AllRoutes />
-      <Footer />
+      {/* <AllRoutes />
+      <Footer /> */}
     </div>
   );
 };
