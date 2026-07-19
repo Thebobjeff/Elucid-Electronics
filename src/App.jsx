@@ -1,5 +1,5 @@
 import { Header, Footer } from "./components/index.jsx";
-import { AllRoutes } from "./routes/AllRoutes.jsx";
+import { AllRoutes } from "./routes/AllRoutes";
 
 const App = () => {
   return (
