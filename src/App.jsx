@@ -5,8 +5,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      {/* <AllRoutes />T
-      <Footer /> */}
+      <AllRoutes />
+      <Footer />
     </div>
   );
 };
