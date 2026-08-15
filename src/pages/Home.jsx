@@ -25,10 +25,15 @@ export const Home = () => {
         </div>
       </section>
       <section className="w-full min-h-screen bg-white items-center justify-center grid grid-cols-2 gap-2">
-        <Wedges image={IPad} />
-        <Wedges image={IPhone} />
-        <Wedges image={IPad} />
-        <Wedges image={IPad} />
+        <Wedges
+          image={IPhone}
+          title="IPhone"
+          learnMoreLink="#"
+          buyLink="/shopping"
+        />
+        <Wedges image={IPhone} title="IPhone" learnMoreLink="#" buyLink="#" />
+        <Wedges image={IPad} title="IPad" learnMoreLink="#" buyLink="#" />
+        <Wedges image={IPad} title="IPad" learnMoreLink="#" buyLink="#" />
       </section>
     </section>
   );

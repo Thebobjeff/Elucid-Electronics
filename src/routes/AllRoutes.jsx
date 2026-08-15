@@ -6,6 +6,7 @@ export const AllRoutes = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/shopping" element={<Shopping />} />
       </Routes>
     </div>
   );
