@@ -1,15 +1,16 @@
 import { useState } from "react";
-import IPhone17 from "../assets/iphone17-p.avif";
+import { useParams } from "react-router-dom";
+import { Products } from "./Products";
 
-export const Product = () => {
+export const ProductPage = () => {
   const [quantity, setQuantity] = useState(1);
+  const { id } = useParams();
 
-  const product = {
-    name: "IPhone 17",
-    price: 799.99,
-    description: "This is where product discription will appear",
-    image: IPhone17,
-  };
+  const product = Products.find((item) => item.id === Number(id));
+
+  if (!product) {
+    return <h1>Product Not Found</h1>;
+  }
 
   return (
     <div className="min-h-screen bg-white text-black">
@@ -55,7 +56,6 @@ export const Product = () => {
               </div>
             </div>
 
-            {/* Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-full font-medium transition">
                 Buy Now

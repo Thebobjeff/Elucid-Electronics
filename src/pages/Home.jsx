@@ -28,7 +28,7 @@ export const Home = () => {
         <Wedges
           image={IPhone}
           title="IPhone"
-          learnMoreLink="/product"
+          learnMoreLink="/product/1"
           buyLink="/shopping"
         />
         <Wedges image={IPhone} title="IPhone" learnMoreLink="#" buyLink="#" />
