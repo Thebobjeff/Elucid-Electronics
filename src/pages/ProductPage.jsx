@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Products } from "./Products";
+import { DropOp } from "../components/index.jsx";
 
 export const ProductPage = () => {
   const [quantity, setQuantity] = useState(1);
@@ -64,6 +65,12 @@ export const ProductPage = () => {
               <button className="flex-1 border border-black hover:bg-black hover:text-white py-4 rounded-full font-medium transition">
                 Add to Cart
               </button>
+            </div>
+            <div className="p-3">
+              <DropOp name="Color" options={product.colorOptions} />
+            </div>
+            <div className="p-3">
+              <DropOp name="Storage" options={product.storageOptions} />
             </div>
           </div>
         </div>
